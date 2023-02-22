@@ -22,13 +22,23 @@ html, body {
     /* position: relative; */
 }
 
+.card-x {
+	background-color: green !important;
+}
+
 .card img{
+	filter: blur(10px);
     max-height: 16rem;
     object-fit: cover;
 }
+
 .card:hover {
 	transform: translateY(-0.5rem) scale(1.0125);
 	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-unblur {
+	filter: blur(0px) !important;
 }
 
 .container{
